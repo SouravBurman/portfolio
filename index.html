@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!---- Header Section Begin ---->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark nav-icon" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars nav-icon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Frontend  </span> Developer </p>
+                <h1>Hi, I'm <span>Sourav</span><br>Burman From Jamshedpur</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------about------- ----->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/userr.png" alt="user logo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Sourav Burman, an MCA student at Shiksha O Anusandhan University.
+                        Passionate about technology and programming, I thrive on challenges and enjoy problem-solving.
+                        With a curious mind and a drive for learning,
+                        I'm dedicated to expanding my skills and contributing meaningfully to the world of computer
+                        science.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Developer</span><br> Frontend Web app Developer </li>
+                            <li><span> Java</span><br> Knowledge of programming in Java</li>
+                            <li><span>SQL</span><br> Database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br><br>1. Skills-Build Program by IBM in Front-End Development
+                                Domain
+                                (6 weeks) <br><br> 2. Completed a 1-month internship at OASIS Infobyte focused on web
+                                development,</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>MCA from ITER SOA University </li>
+                            <li><span>2021</span><br>BCA from Arka Jain University Jamshedpur </li>
+                            <li><span>2018</span><br>12th from SKPS Jamshedpur</li>
+                            <li><span>2016</span><br>10Th from SKPS Jamshedpur </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------services---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Frontend Web Developer</h2>
+                    <p>proficient in HTML5,CSS3,JavaScript skilled in CSS Tailwind. </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i></i>
+                    <h2>Programming in Java</h2>
+                    <p>Expertise in Java programming, OOP principles. </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Java">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i></i>
+                    <h2>Database in SQL</h2>
+                    <p>Proficient in SQL Queries, Database design, Joins and Normalization. </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------my works-------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/tempp.jpg" alt="work-1-img">
+                    <div class="layer">
+                        <h3>Temperature Converter</h3>
+                        <p>Efficiently convert temperatures with ease on our user-friendly online temperature converter website. Fast and accurate!
+                        </p>
+                        <a href="https://souravburman.github.io/OIBSIP_Task3/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2-img">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quod ex nesciunt delectus .
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/flipkart.jpg" alt="work-3-img">
+                    <div class="layer">
+                        <h3>Flipkart Clone App</h3>
+                        <p>- Designed and developed a website inspired by
+                            Flipkart, implementing front-end features and user interface similar to the
+                            original platform.
+                        </p>
+                        <a href="https://souravburman.github.io/flipkart_clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------contact------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> burmansourav0@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7004749575</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_royal__sourav_?igsh=MzB2MHYzbGc5aXh0"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sourav-burman-493768219/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/+917004749575"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/SouravBurman"><i class="fa-brands fa-github"></i></i></a>
+
+
+                    </div>
+                    <a href="https://drive.google.com/file/d/1zEvKboRMEqJndnnkdghBpYZM3r0KrBt7/view?usp=sharing"
+                        download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" cols="30" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Sourav, Made with <i class="fa-solid fa-heart"></i> by Sourav Burman</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- ------javaScript----- -->
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <!-- ------------sidemenu-------------- -->
+    <script>
+
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- ----------contact form to google sheet------------ -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyakQgzeHpfjkj1658wBJNtI7F_W61o-sSsrfxUYZbf1Odp_QZ8QwxxgNPUKzuJu-Uq/exec '
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully..."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
